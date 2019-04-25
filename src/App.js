@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import CustomersList from './components/CustomersList';
 import Home from './components/Home';
+import TrainingsList from './components/TrainingsList';
 
 class App extends Component {
   render() {
@@ -24,13 +25,14 @@ class App extends Component {
               <div class="Frame" style={{marginleft:24}}>
               <Link to="/" style={{textDecoration: 'none'}}><Button style={{marginTop:10, marginBottom:10, marginRight:5}} variant="outlined">Home</Button></Link>
               <Link to="/customers" style={{textDecoration: 'none'}}><Button style={{marginTop:10, marginBottom:10, marginRight:5}} variant="outlined">Customers</Button></Link>
-
+              <Link to="/trainings" style={{textDecoration: 'none'}}><Button style={{marginTop:10, marginBottom:10, marginRight:5}} variant="outlined">Trainings</Button></Link>
               </div>  
         
 
                   <Switch>
                     <Route exact path="/" component={Home} />
                     <Route path= "/customers" component={CustomersList} />
+                    <Route path= "/trainings" component={TrainingsList} />
 
                  </Switch>
 
