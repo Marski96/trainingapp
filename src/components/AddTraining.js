@@ -9,7 +9,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 
 class AddTraining extends Component {
      state = {
-         open: false, date: '', duration: '', acitivity: ''
+         open: false, date: '', duration: '', acitivity: '', customer: ''
  };
 
 handleClickOpen = () => {
@@ -29,6 +29,7 @@ saveTraining = () => {
         date: this.state.date,
         duration: this.state.duration,
         activity: this.state.activity,
+        customer: this.props.customer
     }
 
     this.props.addTraining(newTraining);
@@ -44,10 +45,10 @@ render() {
                 onClose={this.handleClose}
                 aria-labelledby="form-dialog-title"
                 >
-                    <DialogTitle id="form-dialog-title">Add new training</DialogTitle>
+                    <DialogTitle id="form-dialog-title">Add new training for a customer</DialogTitle>
                     <DialogContent>
                         <TextField autoFocus margin="dense" name="activity" value={this.state.activity} onChange={this.handleChange} label="Activity" fullWidth />
-                        <TextField margin="dense" name="date" value={this.state.date} onChange={this.handleChange} label="Date (DD.MM.YYYY - HH:MM)" fullWidth />
+                        <TextField margin="dense" name="date" value={this.state.date} onChange={this.handleChange} label="Date (YYYY-MM-DD)" fullWidth />
                         <TextField margin="dense" name="duration" value={this.state.duration} onChange={this.handleChange} label="Duration (min)" fullWidth />
                     </DialogContent>
                     

@@ -53,7 +53,7 @@ editCustomer = (link, customer) => {
 }
 
   // Delete customer
-  deleteCustomer = link => {
+  deleteCustomer = (link) => {
     if(window.confirm("Are you sure you want to delete this customer?")) {
       fetch(link, { method: "DELETE" })
         .then(response => this.loadCustomers())
