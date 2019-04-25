@@ -50,13 +50,13 @@ render() {
                 >
                     <DialogTitle id="form-dialog-title">New Customer</DialogTitle>
                     <DialogContent>
-                        <TextField autoFocus margin="dense" name="firstname" value={this.state.firstname} onChange={this.handleChange} label="Firstname" fullWidht />
-                        <TextField margin="dense" name="lastname" value={this.state.lastname} onChange={this.handleChange} label="Lastname" fullWidht />
-                        <TextField margin="dense" name="streetaddress" value={this.state.streetaddress} onChange={this.handleChange} label="Streetaddress" fullWidht />
-                        <TextField margin="dense" name="postcode" value={this.state.postcode} onChange={this.handleChange} label="Postcode" fullWidht />
-                        <TextField margin="dense" name="city" value={this.state.city} onChange={this.handleChange} label="City" fullWidht />
-                        <TextField margin="dense" name="email" value={this.state.email} onChange={this.handleChange} label="Email" fullWidht />
-                        <TextField margin="dense" name="phone" value={this.state.phone} onChange={this.handleChange} label="Phone" fullWidht />
+                        <TextField autoFocus margin="dense" name="firstname" value={this.state.firstname} onChange={this.handleChange} label="Firstname" fullWidth />
+                        <TextField margin="dense" name="lastname" value={this.state.lastname} onChange={this.handleChange} label="Lastname" fullWidth />
+                        <TextField margin="dense" name="streetaddress" value={this.state.streetaddress} onChange={this.handleChange} label="Streetaddress" fullWidth />
+                        <TextField margin="dense" name="postcode" value={this.state.postcode} onChange={this.handleChange} label="Postcode" fullWidth />
+                        <TextField margin="dense" name="city" value={this.state.city} onChange={this.handleChange} label="City" fullWidth />
+                        <TextField margin="dense" name="email" value={this.state.email} onChange={this.handleChange} label="Email" fullWidth />
+                        <TextField margin="dense" name="phone" value={this.state.phone} onChange={this.handleChange} label="Phone" fullWidth />
                     </DialogContent>
                     
                     <DialogActions>
